@@ -11,8 +11,11 @@ int main() {
     long n, k;
     cin >> n >> k;
 
-    if (n <= k) { cout << (k + n - 1) / n << endl; }
-    else { cout << 1 + (n % k > 0) << endl; }
+    if (n <= k) {
+      cout << (k + n - 1) / n << endl;
+    } else {
+      cout << 1 + (n % k > 0) << endl;
+    }
   }
 
   return 0;

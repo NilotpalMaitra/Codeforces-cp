@@ -1,18 +1,36 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
 
 using namespace std;
 
-int main(){
+int main() {
 
-  int t,n;
-  cin >> t >> n;
-   vector<typename Tp, typename Alloc>
+  long t;
+  cin >> t;
+  while (t--) {
+    long n;
+    cin >> n;
+    long a(-1), b(-1);
+    bool res(true);
+    while (n--) {
+      long x;
+      cin >> x;
+      if (x % 2) {
+        if (a <= x) {
+          a = x;
+        } else {
+          res = false;
+        }
+      } else {
+        if (b <= x) {
+          b = x;
+        } else {
+          res = false;
+        }
+      }
+    }
 
-  if {
-    cout<< "Yes" << endl;
-      }
-    else{
-    cout<< "No" << endl;
-      }
+    cout << (res ? "Yes" : "No") << endl;
+  }
+
+  return 0;
 }
