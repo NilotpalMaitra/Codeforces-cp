@@ -12,6 +12,7 @@ int main() {
   for (char c : s) {
     if (c == "hello"[index]) {
       index++;
+      //for (char c : s): This is a range-based for loop that iterates through each character (char c) in the string s. It simplifies the process of iterating through each character of a container (in this case, a string).
     }
     if (index == 5) {
       // All letters in "hello" are found in order
